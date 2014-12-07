@@ -1,5 +1,5 @@
 puts "The students of my cohort at Makers Academy"
-puts "____________
+puts "--------------"
 puts "Dr. Hannibal Lecter"
 puts "Darth Vader"
 puts "Nurse Ratched"
