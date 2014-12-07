@@ -1,5 +1,3 @@
-
-
 def print_header
 	puts "The students of my cohort at Makers Academy"
 	puts "------------"
@@ -20,12 +18,15 @@ def input_students
 	#while the name is not empty, repeat this code
 	puts "Please enter the cohort of the student"
 	cohort = gets.chomp
-	while !name.empty? do
+	  while !name.empty? do
 	#add the student hash to the aray
-	students << {:name => name, :cohort => cohort}
-	puts "Now we have #{students.length} students"
+	    students << {:name => name, :cohort => cohort}
+	    puts "Now we have #{students.length} students"
     #get another name from the user
-    name = gets.chomp
+        name = gets.chomp
+        puts "Please enter the cohort of the student"
+        cohort = gets.chomp
+       break if name == nil.chomp
 end
 #return the array of students
 students
@@ -45,4 +46,3 @@ students = input_students
 print_header
 print(students)
 print_footer(students)
-
